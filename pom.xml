@@ -9,19 +9,20 @@
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
     <encoding>UTF-8</encoding>
-    <scala.version>2.9.2</scala.version>
+    <scala.version>2.10.0-RC3</scala.version>
+    <scct.scala.version>2.10</scct.scala.version>
   </properties>
   <repositories>
     <repository>
       <id>scct-local-repo</id>
-      <url>file:///Users/mtkopone/projects/scct/gh-pages/maven-repo/</url>
+      <url>file:///Users/mtkopone/dev/scct-root/gh-pages/maven-repo/</url>
     </repository>
   </repositories>
   <distributionManagement>
     <repository>
       <id>local-gh-pages</id>
       <name>Local-gh-pages</name>
-      <url>file:///Users/mtkopone/projects/scct/gh-pages/maven-repo/</url>
+      <url>file:///Users/mtkopone/dev/scct-root/gh-pages/maven-repo/</url>
     </repository>
   </distributionManagement>
   <dependencies>
@@ -32,7 +33,7 @@
     </dependency>
     <dependency>
       <groupId>reaktor</groupId>
-      <artifactId>scct_${scala.version}</artifactId>
+      <artifactId>scct_${scct.scala.version}</artifactId>
       <version>0.2-SNAPSHOT</version>
     </dependency>
     <dependency>
